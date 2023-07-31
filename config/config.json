@@ -1,0 +1,15 @@
+{
+    "authenticationMode": "MasterUser",
+    "authorityUri": "https://login.microsoftonline.com/common/v2.0",
+    "scope": "https://analysis.windows.net/powerbi/api",
+    "apiUrl": "https://api.powerbi.com/",
+    "clientId": "b17a9d02-b6c4-46e0-9402-1c52111cb49c",
+    "workspaceId": "a7069275-832a-4341-be98-ebbf29705141",
+    "reportId": "57afaa1d-1fea-49e3-9bc8-467e36a8a87e",
+    "pbiUsername": "rainier@aime.life",
+    "pbiPassword": "Triangle99",
+    "clientSecret": "",
+    "tenantId": ""
+}
+
+

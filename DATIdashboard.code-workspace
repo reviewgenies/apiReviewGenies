@@ -1,0 +1,35 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "D:/Rainier/AppOwnsData"
+		},
+		{
+			"path": "D:/Rainier/AppOwnsData/routes"
+		},
+		{
+			"path": "D:/Rainier/AppOwnsData/src"
+		},
+		{
+			"path": "D:/Rainier/AppOwnsData/views"
+		},
+		{
+			"path": "D:/Rainier/AppOwnsData/models"
+		},
+		{
+			"path": "D:/Rainier/AppOwnsData/config"
+		},
+		{
+			"path": "D:/Rainier/AppOwnsData/controller"
+		},
+		{
+			"path": "D:/Rainier/AppOwnsData/function"
+		},
+		{
+			"path": "D:/Rainier/AppOwnsData/middleware"
+		}
+	],
+	"settings": {}
+}
