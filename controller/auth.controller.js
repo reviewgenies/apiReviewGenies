@@ -151,7 +151,7 @@ exports.recoverPassword = (req, res) => {
         to: user.dataValues.email, // list of receivers
         subject: "Solicitud de Reestablecimiento de Contraseña", // Subject line
         //text: "Hola "+user.nombre +" "+user.apellido+", respondiendo a tu solicitud, hemos creado una de contraseña provisional para el uso de los sistema. Tu contraseña es: "+passwordnew, // plain text body
-        html: "Hola <b>" + user.name + " " + user.lastname + "</b>, respondiendo a tu solicitud hemos creado una contraseña provisional para el uso del sistema. Tu contraseña es: <b>" + passwordnew + "</b>" // html body
+        html: "Hola <b>" + user.name + "</b>, respondiendo a tu solicitud hemos creado una contraseña provisional para el uso del sistema. Tu contraseña es: <b>" + passwordnew + "</b>" // html body
       });
 
       user.dataValues.password = bcrypt.hashSync(passwordnew, 8)
