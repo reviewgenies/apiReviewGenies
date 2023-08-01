@@ -10,8 +10,11 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cookieParser = require('cookie-parser')
 const db = require("../models");
+const cors = require('cors');
 const controller = require('../controller/auth.controller');
 const app = express();
+app.use(cors());
+
 const secureRoute = require('../routes/secure-routes');
 
 const passport = require('passport')
