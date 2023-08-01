@@ -24,6 +24,10 @@ const session = require('express-session')
 global.login = false;
 global.role = 0;
 
+app.use(
+    cors({origin: ['https://mango-mud-004870e0f.3.azurestaticapps.net/', 'http://127.0.0.1:5500']})
+  );
+
 app.use(cookieParser());
 
 app.set('view-engine', 'ejs')
