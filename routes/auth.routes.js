@@ -21,4 +21,6 @@ module.exports = function(app) {
   app.post("/api/auth/recoverpassword", controller.recoverPassword);
 
   app.post("/api/auth/approved", controller.approved);
+
+  app.post("/api/auth/changepasswordAdmin",controller.changepasswordAdmin);
 };

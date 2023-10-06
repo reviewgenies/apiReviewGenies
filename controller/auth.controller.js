@@ -214,6 +214,32 @@ exports.changepassword = (req, res) => {
     });
 }
 
+exports.changepasswordAdmin = (req, res) => {
+
+  User.findOne({
+    where: {
+      email: req.body.email
+    }
+  })
+    .then(async user => {
+      if (!user) {
+        return res.status(404).send({ message: "No existen estas credenciales." });
+      }
+
+      user.dataValues.password = bcrypt.hashSync(req.body.newpassword, 8)
+
+      User.update(user.dataValues, {
+        where: { id: user.dataValues.id }
+      })
+
+      res.status(200).send({ message: "Su contraseña ha sido actualizada con exito." });
+
+    })
+    .catch(err => {
+      res.status(500).send({ message: err.message });
+    });
+}
+
 exports.approved = (req, res) => {
 
   User.findOne({
